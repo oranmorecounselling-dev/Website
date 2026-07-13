@@ -371,6 +371,16 @@
       border-radius: var(--radius-lg);
     }
 
+    .qual-tag-link {
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.2s, color 0.2s;
+    }
+    .qual-tag-link:hover {
+      background: var(--green-mid);
+      color: white;
+    }
+
     /* ── AREAS OF FOCUS ── */
     #focus { background: var(--bg-section); }
 
@@ -785,6 +795,12 @@
       background: oklch(96% 0.02 143);
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .iacp-badge:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px oklch(0% 0 0 / 0.25);
     }
 
     .iacp-badge span {
@@ -803,6 +819,12 @@
       line-height: 1.55;
       max-width: 220px;
     }
+    .iacp-text a {
+      color: oklch(90% 0.03 143);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .iacp-text a:hover { color: white; }
 
     .footer-bottom {
       padding-top: 24px;
@@ -1060,7 +1082,7 @@
           <div class="quals">
             <span class="qual-tag">MSc Integrative Psychotherapy (DCU)</span>
             <span class="qual-tag">Individuals &amp; Couples</span>
-            <span class="qual-tag">Pre-accredited member of the IACP</span>
+            <a href="https://iacp.ie/preaccredited-members-list" target="_blank" rel="noopener" class="qual-tag qual-tag-link">Pre-accredited member of the IACP</a>
             <span class="qual-tag">In-person &amp; Online</span>
             <span class="qual-tag">English &amp; Français</span>
           </div>
@@ -1346,11 +1368,11 @@
           </div>
         </div>
         <div class="footer-iacp">
-          <div class="iacp-badge">
+          <a href="https://iacp.ie/preaccredited-members-list" target="_blank" rel="noopener" class="iacp-badge" aria-label="Verify on the IACP Pre-Accredited Member Check">
             <span>IACP<br/>Pre-accredited</span>
-          </div>
+          </a>
           <div class="iacp-text">
-            Pre-accredited member of the IACP (the Irish Association for Counselling &amp; Psychotherapy). Committed to ongoing professional development and ethical practice.
+            <a href="https://iacp.ie/preaccredited-members-list" target="_blank" rel="noopener">Pre-accredited member of the IACP</a> (the Irish Association for Counselling &amp; Psychotherapy). Committed to ongoing professional development and ethical practice.
           </div>
         </div>
       </div>
